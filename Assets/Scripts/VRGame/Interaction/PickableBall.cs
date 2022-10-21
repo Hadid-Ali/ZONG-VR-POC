@@ -13,6 +13,7 @@ namespace VRGame.Interaction
 
         public override void OnInteraction(GameObject interactionTarget)
         {
+            base.OnInteraction(interactionTarget);
             m_PickableMovement.MoveTo(interactionTarget.transform);
         }
 

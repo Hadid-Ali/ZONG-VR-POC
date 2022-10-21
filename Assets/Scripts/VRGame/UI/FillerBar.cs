@@ -47,5 +47,7 @@ public class FillerBar : MonoBehaviour
          m_FillerImage.fillAmount += m_FillAmount;
          yield return m_WaitForSeconds;
       }
+      StopFillerAction();
+      action.Invoke();
    }
 }

@@ -20,7 +20,7 @@ namespace VRGame.Interaction
 
         public virtual void OnInteraction(GameObject interactionTarget)
         {
-            m_IsPersistentInteractable = IsInteractable;
+            IsInteractable = m_IsPersistentInteractable;
             m_OnInteractionUnityEvent?.Invoke();
         }
         

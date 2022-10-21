@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRGame.Interaction;
+using VRGame.UI;
+using VRGame.UI.Base;
 
-public class InteractableUI : MonoBehaviour
+public class InteractableUI : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private UIComponentWithColorStates m_UIStatesHandler;
+
+    public override void OnInteractionStart()
     {
-        
+        m_UIStatesHandler.OnFocus();
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnInteractionExit()
     {
-        
+        m_UIStatesHandler.OnUnFocus();
+
     }
 }

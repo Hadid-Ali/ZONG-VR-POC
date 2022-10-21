@@ -10,13 +10,13 @@ namespace VRGame.UI.Base
         [SerializeField] private Color m_FocusColor;
         [SerializeField] private Color m_UnFocusColor;
 
-        protected override void OnFocus()
+        public override void OnFocus()
         {
             base.OnFocus();
             SetImageColor(m_FocusColor);
         }
 
-        protected override void OnUnFocus()
+        public override void OnUnFocus()
         {
             base.OnUnFocus();
             SetImageColor(m_UnFocusColor);

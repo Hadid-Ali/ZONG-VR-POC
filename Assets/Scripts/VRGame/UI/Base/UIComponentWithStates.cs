@@ -18,12 +18,12 @@ namespace VRGame.UI.Base
             protected set;
         }
 
-        protected virtual void OnFocus()
+        public virtual void OnFocus()
         {
             FocusState = FocusState.Focused;
         }
 
-        protected virtual void OnUnFocus()
+        public virtual void OnUnFocus()
         {
             FocusState = FocusState.UnFocused;
         }

@@ -7,6 +7,8 @@ namespace Global
     public class GameManager : MonoSingleton<GameManager>
     {
         public static Action<bool> Aim;
+        public static Action<Transform> MovePlayer;
+        
         private GameplayData m_GameplayData;
 
         public Camera MainCamera => m_GameplayData.CameraManager.MainCameraObject;
