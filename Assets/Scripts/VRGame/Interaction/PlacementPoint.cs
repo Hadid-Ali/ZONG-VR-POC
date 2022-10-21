@@ -18,7 +18,7 @@ namespace VRGame.Interaction
 
         public void OnReachPoint()
         {
-            SoundManager.Instance.PlaySoundOneShot(SoundType.TaskComplete);
+            GameManager.Instance.ChangeGameState(GameState.SimulationComplete);
             m_OnPointReach.Invoke();
         }
     }
