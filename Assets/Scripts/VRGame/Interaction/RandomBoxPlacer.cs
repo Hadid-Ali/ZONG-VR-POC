@@ -13,6 +13,8 @@ namespace VRGame.Interaction
 
         [SerializeField] private PlacementPoint[] m_PlacementPoints;
 
+        private PlacementPoint m_FinalPlacementPoint;
+        
         public void RandomPlacement()
         {
             Invoke(nameof(RandomPlacement_Internal), m_RandomPlacementWait);
@@ -20,10 +22,16 @@ namespace VRGame.Interaction
 
         private void RandomPlacement_Internal()
         {
-            PlacementPoint point = m_PlacementPoints[Random.Range(0, m_PlacementPoints.Length)];
-            point.OnSelectPoint();
+            m_FinalPlacementPoint = m_PlacementPoints[Random.Range(0, m_PlacementPoints.Length)];
+            m_FinalPlacementPoint.OnSelectPoint();
 
-            m_SimpleMovement.MoveTo(point.PlacementPointTransform, true, point.OnReachPoint);
+            m_SimpleMovement.MoveTo(m_FinalPlacementPoint.PlacementPointTransform, true, OnPointReach);
+        }
+
+        private void OnPointReach()
+        {
+            m_FinalPlacementPoint.OnReachPoint();
+            GameManager.Instance.ChangeGameState(GameState.SimulationComplete);
         }
     }
 }

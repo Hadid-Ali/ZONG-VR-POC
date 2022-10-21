@@ -18,7 +18,6 @@ namespace VRGame.Interaction
 
         public void OnReachPoint()
         {
-            GameManager.Instance.ChangeGameState(GameState.SimulationComplete);
             m_OnPointReach.Invoke();
         }
     }
