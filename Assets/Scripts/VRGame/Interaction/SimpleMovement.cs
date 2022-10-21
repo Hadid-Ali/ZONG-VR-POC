@@ -19,6 +19,7 @@ namespace VRGame.Interaction
 
         public void MoveTo(Transform target,bool setParent = false)
         {
+            m_Transform.SetParent(null);
             StartCoroutine(MovementRoutine(target, setParent));
         }
 
@@ -33,6 +34,12 @@ namespace VRGame.Interaction
 
             if (setParent)
                 m_Transform.SetParent(target);
+            OnMovementEnd();
+        }
+
+        protected virtual void OnMovementEnd()
+        {
+            
         }
     }
 }

@@ -52,6 +52,7 @@ namespace VRGame.Input
             if (Api.IsTriggerPressed)
             {
                 m_InputAction.Invoke();
+                SoundManager.Instance.PlaySoundOneShot(SoundType.Click);
             }
         }
     }

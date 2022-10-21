@@ -7,7 +7,7 @@ namespace Global
     public class GameManager : MonoSingleton<GameManager>
     {
         public static Action<bool> Aim;
-        public static Action<Transform> MovePlayer;
+        public static Action<Transform,Action> MovePlayer;
         
         private GameplayData m_GameplayData;
 
@@ -17,6 +17,7 @@ namespace Global
         private void Start()
         {
             Application.targetFrameRate = 60;
+            Screen.sleepTimeout = Int32.MaxValue;
         }
 
         public void RegisterGameplayData(GameplayData gameplayData)

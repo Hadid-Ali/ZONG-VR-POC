@@ -12,6 +12,7 @@ public class InteractableUI : Interactable
     public override void OnInteractionStart()
     {
         m_UIStatesHandler.OnFocus();
+        SoundManager.Instance.PlaySoundOneShot(SoundType.Tick);
     }
 
     public override void OnInteractionExit()
