@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MovementSpeed: 15
-  m_DistanceReachOffset: 0.1
+  m_DistanceReachOffset: 0.5
   m_OnReachEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1236,13 +1236,13 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
+    m_Type: 2
+    m_Resolution: 2
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0.133
+    m_NormalBias: 0
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -1308,7 +1308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 469362039162056651, guid: efc6fb24b837ec34bb394d78e001b968, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 469362039162056651, guid: efc6fb24b837ec34bb394d78e001b968, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1316,7 +1316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 469362039162056651, guid: efc6fb24b837ec34bb394d78e001b968, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 469362039162056651, guid: efc6fb24b837ec34bb394d78e001b968, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4988,7 +4988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 469362039162056651, guid: efc6fb24b837ec34bb394d78e001b968, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 469362039162056651, guid: efc6fb24b837ec34bb394d78e001b968, type: 3}
       propertyPath: m_LocalPosition.z

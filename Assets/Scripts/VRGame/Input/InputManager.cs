@@ -49,6 +49,11 @@ namespace VRGame.Input
             if(m_InputAction is null)
                 return;
 
+            if (Api.IsCloseButtonPressed)
+            {
+                Application.Quit();
+            }
+            
             if (Api.IsTriggerPressed)
             {
                 m_InputAction.Invoke();
