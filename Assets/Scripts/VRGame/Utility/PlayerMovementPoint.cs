@@ -4,18 +4,12 @@ using UnityEngine.Events;
 
 namespace VRGame.Utility
 {
-   public class PlayerMovementPoint : MonoBehaviour
+   public class PlayerMovementPoint : MovementPoint
    {
-      [SerializeField] private UnityEvent m_OnReach;
-
-      private void OnEnable()
+      protected override void OnEnable()
       {
+         base.OnEnable();
          GameManager.MovePlayer(transform, OnReachPoint);
-      }
-
-      protected virtual void OnReachPoint()
-      {
-         m_OnReach?.Invoke();
       }
    }
 }
