@@ -474,7 +474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &163445974
 RectTransform:
   m_ObjectHideFlags: 0
@@ -672,13 +672,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269247352}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -1.265, z: 27.62}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8, y: 0.33500004, z: 19.13}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1652506791}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &269247354
 BoxCollider:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 905398369}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1126,8 +1126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 308908921}
-  m_FocusColor: {r: 1, g: 1, b: 1, a: 1}
-  m_UnFocusColor: {r: 0.08025527, g: 1, b: 0, a: 1}
+  m_FocusColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  m_UnFocusColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &308908924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_OnInteractionUnityEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 109479033}
+      - m_Target: {fileID: 905398369}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1375,8 +1375,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 472471475}
-  m_FocusColor: {r: 1, g: 1, b: 1, a: 1}
-  m_UnFocusColor: {r: 0.08025527, g: 1, b: 0, a: 1}
+  m_FocusColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  m_UnFocusColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &472471474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,13 +1458,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523988542}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.417, y: -1.265, z: 27.62}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.8, y: 0.33500004, z: 19.13}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1652506791}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &523988544
 BoxCollider:
@@ -2642,10 +2642,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 959308587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd4ad08ae0a58c842866c22bc56f9caf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3959be936a599604b9f0bc5bc5df24db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovementSpeed: 15
+  m_MovementSpeed: 2
   m_DistanceReachOffset: 0.5
 --- !u!1 &1062837105
 GameObject:
@@ -2775,8 +2775,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 1070938273}
-  m_FocusColor: {r: 1, g: 1, b: 1, a: 1}
-  m_UnFocusColor: {r: 0.08025527, g: 1, b: 0, a: 1}
+  m_FocusColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  m_UnFocusColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1070938276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3608,8 +3608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 1531232532}
-  m_FocusColor: {r: 1, g: 1, b: 1, a: 1}
-  m_UnFocusColor: {r: 0.08025527, g: 1, b: 0, a: 1}
+  m_FocusColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  m_UnFocusColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1531232531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4112,8 +4112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 1586867157}
-  m_FocusColor: {r: 1, g: 1, b: 1, a: 1}
-  m_UnFocusColor: {r: 0.08025527, g: 1, b: 0, a: 1}
+  m_FocusColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  m_UnFocusColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1586867156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4300,12 +4300,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652506790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: -9.58}
+  m_LocalPosition: {x: 0, y: 1.6, z: 15.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 523988543}
-  - {fileID: 269247353}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4543,8 +4541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 1661229720}
-  m_FocusColor: {r: 1, g: 1, b: 1, a: 1}
-  m_UnFocusColor: {r: 0.08025527, g: 1, b: 0, a: 1}
+  m_FocusColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  m_UnFocusColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1661229723
 MonoBehaviour:
   m_ObjectHideFlags: 0
