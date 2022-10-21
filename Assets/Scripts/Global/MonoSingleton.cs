@@ -7,21 +7,17 @@ namespace Global
 		public static T Instance => m_Instance;
 	
 		private static T m_Instance = null;
-	
+
 		private void Awake()
 		{
-			if (m_Instance == null)
-			{
-				m_Instance = this as T;
-				DontDestroyOnLoad(gameObject);
-				Init();
-			}
-			else if (m_Instance != this)
-			{
-				Destroy(this);
-			}
+			if (m_Instance is not null)
+				Destroy(gameObject);
+
+			DontDestroyOnLoad(gameObject);
+			m_Instance = this as T;
+			Init();
 		}
-	
+
 		public virtual void Init()
 		{
 		

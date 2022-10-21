@@ -12,7 +12,7 @@ namespace Global
     
     public class GameplayDataHolder : MonoBehaviour
     {
-        [SerializeField] private GameplayData m_GameplayData;
+        [SerializeField] private GameplayData m_GameplayData = new();
 
         private void OnEnable()
         {

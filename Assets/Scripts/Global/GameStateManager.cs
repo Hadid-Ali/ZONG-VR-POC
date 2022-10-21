@@ -23,6 +23,7 @@ namespace Global
         public void ChangeGameState(GameState gameState)
         {
             m_CurrentGameState = gameState;
+            OnGameStateChange_Internal(gameState);
         }
 
         private void OnGameStateChange_Internal(GameState gameState)
