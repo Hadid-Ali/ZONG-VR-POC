@@ -15,9 +15,10 @@ namespace Global
 
         public Camera MainCamera => m_GameplayData.CameraManager.MainCameraObject;
         public Transform GlobalBillBoardTarget => m_GameplayData.CameraManager.MainCameraTransform;
-
-        private void Start()
+        
+        public override void Init()
         {
+            base.Init();
             Application.targetFrameRate = 60;
             Screen.sleepTimeout = Int32.MaxValue;
         }
